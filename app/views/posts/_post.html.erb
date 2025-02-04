@@ -1,0 +1,11 @@
+<div id ="<%= dom_id(post) %>">
+  <div style="border: solid; padding: 0 1rem; margin: 1rem 0;">
+    <p>
+      <%= post.body %>
+    </p>
+    <p>
+      <%= link_to "編集", edit_post_path(post), data: { turbo_stream: true } %>
+      <%= link_to "削除", post_path(post), data: { turbo_method: :delete, turbo_confirm: "削除してよろしいですか？" } %>
+    </p>
+  </div>
+</div>

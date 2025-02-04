@@ -1,0 +1,9 @@
+<%= form_with model: post, data: { turbo_frame: :_top } do |form| %>
+  <p>
+    <%= form.label :body, "内容" %>
+    <%= form.text_field :body %>
+  </p>
+  <div>
+    <%= form.submit "送信" %>
+  </div>
+<% end %>

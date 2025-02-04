@@ -1,0 +1,11 @@
+<h1>Turbo</h1>
+
+<hr>
+<div id ="<%= dom_id(Post) %>">
+  <%= render "new_link" %>
+</div>
+<hr>
+
+<div id ="<%= Post.table_name %>">
+  <%= render @posts %>
+</div>

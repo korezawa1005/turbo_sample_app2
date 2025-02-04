@@ -1,0 +1,7 @@
+<%= turbo_stream.prepend Post.table_name do %>
+  <%= render "post", post: @post %>
+<% end %>
+
+<%= turbo_stream.update dom_id(Post.new) do %>
+  <%= render "new_link" %>
+<% end %>
